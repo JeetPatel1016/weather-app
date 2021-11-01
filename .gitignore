@@ -1,0 +1,4 @@
+api-details.json
+.prettierrc
+node_modules/
+.dist/
