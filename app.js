@@ -66,6 +66,4 @@ app.post("/", (req, res) => {
     res.redirect("/");
 });
 app.get("/error", (req, res) => res.render("error"));
-app.listen(process.env.PORT || 3000, () =>
-    console.log(`Server is running`);
-);
+app.listen(process.env.PORT || 3000, () => console.log(`Server is running`));
