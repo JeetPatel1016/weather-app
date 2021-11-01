@@ -67,5 +67,5 @@ app.post("/", (req, res) => {
 });
 app.get("/error", (req, res) => res.render("error"));
 app.listen(process.env.PORT || 3000, () =>
-    console.log(`Example app listening on port ${port}!`)
+    console.log(`Server is running`);
 );
