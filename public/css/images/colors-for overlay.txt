@@ -1,0 +1,5 @@
+dawn - 17021e 30%
+morning - 031428 50%
+afternoon - 362013 40%
+dusk - 44051d 35%
+night - 030f1c 60%
