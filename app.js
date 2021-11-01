@@ -2,7 +2,6 @@
 const got = require("got");
 const express = require("express");
 const bodyParser = require("body-parser");
-const port = 3000 || process.env.port;
 const app = express();
 
 app.set("view engine", "ejs");
@@ -67,4 +66,6 @@ app.post("/", (req, res) => {
     res.redirect("/");
 });
 app.get("/error", (req, res) => res.render("error"));
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(process.env.PORT || 3000, () =>
+    console.log(`Example app listening on port ${port}!`)
+);
