@@ -12,12 +12,48 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            rel="shortcut icon"
+            href="./css/images/about logo.png"
+            type="image/x-icon"
+        />
         <title>Know Weather</title>
     </head>
     <body>
         <% let d = new Date(); let ph = ""; if (d.getHours() >= 5 &&
         d.getHours() <= 18) ph = "day-"; else ph = "night-"; let weather =
         data[0]; let list = data[1].list; let iconString = "wi wi-owm-"+ph; %>
+        <div id="modal" class="about-modal">
+            <div class="modal-content">
+                <div class="heading-about">
+                    <h1>KnowWeather</h1>
+                    <p>
+                        A weather app to view current weather and weather
+                        forecast
+                    </p>
+                </div>
+                <p class="description-about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias exercitationem impedit aliquam sed quia neque quae
+                    veritatis odio necessitatibus. Voluptatem vero veritatis
+                    nesciunt nostrum ratione repellendus numquam nihil facere
+                    et.
+                </p>
+                <div class="profile">
+                    <p>Made by</p>
+                    <div class="image-card"></div>
+                    <h1>Jeet Patel</h1>
+                    <p>
+                        Check out my
+                        <a
+                            href="https://github.com/JeetPatel1016"
+                            target="_blank"
+                            >Github</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="main">
             <!--Header Text-->
             <div class="headerContainer">
@@ -36,6 +72,8 @@
             <!--Info Body-->
             <div class="infoContainer">
                 <div>
+                    <!--About button-->
+                    <div id="logo-btn" class="about-logo"></div>
                     <!--ICON-->
                     <div class="weather">
                         <% let s = iconString + weather.weather[0].id;%>
@@ -148,5 +186,6 @@
             x.addEventListener("change", matchFunction);
         </script>
         <script src="./js/index.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
