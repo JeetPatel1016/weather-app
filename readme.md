@@ -11,3 +11,5 @@ Design for the UI is inspired by [this design](https://dribbble.com/shots/635727
 by [Hassanur Rakib.](https://dribbble.com/hassanurrakib)
 
 Data is made available through Free API provided by [OpenWeather.](https://openweathermap.org/")
+
+Working prototype [here](https://stormy-dawn-73924.herokuapp.com/).
